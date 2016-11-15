@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  Tools-Demo
+//
+//  Created by apple on 2016/11/15.
+//  Copyright © 2016年 tyw. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//隐藏使用NSSelectorFromString的警告
+#define TTPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+
+#endif /* PrefixHeader_pch */
