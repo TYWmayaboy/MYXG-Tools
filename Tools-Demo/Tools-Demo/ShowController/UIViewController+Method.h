@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (Method)
-- (void)showAlertView:(NSString *)textAligment;
 
+- (void)showUpdate;
+
+- (void)showAlertView;
+
+- (void)showGotoComment;
+
+- (void)showQRCode;
+
+- (void)showChangePageView;
 @end

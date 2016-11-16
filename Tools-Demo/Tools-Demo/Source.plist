@@ -4,9 +4,33 @@
 <array>
 	<dict>
 		<key>method</key>
-		<string>showAlertView:</string>
+		<string>showUpdate</string>
+		<key>description</key>
+		<string>app更新提示</string>
+	</dict>
+	<dict>
+		<key>method</key>
+		<string>showQRCode</string>
+		<key>description</key>
+		<string>生成二维码</string>
+	</dict>
+	<dict>
+		<key>method</key>
+		<string>showAlertView</string>
 		<key>description</key>
 		<string>警告框中Message文本的对齐样式</string>
+	</dict>
+	<dict>
+		<key>method</key>
+		<string>showGotoComment</string>
+		<key>description</key>
+		<string>引导用户评价(定时提醒)</string>
+	</dict>
+	<dict>
+		<key>method</key>
+		<string>showChangePageView</string>
+		<key>description</key>
+		<string>换页按钮</string>
 	</dict>
 </array>
 </plist>
