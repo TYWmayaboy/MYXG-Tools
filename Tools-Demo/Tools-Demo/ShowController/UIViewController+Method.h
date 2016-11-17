@@ -19,4 +19,8 @@
 - (void)showQRCode;
 
 - (void)showChangePageView;
+
+- (void)showCustomAlertView;
+
+- (void)showCirclePercent;
 @end

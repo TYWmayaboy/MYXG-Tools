@@ -32,5 +32,17 @@
 		<key>description</key>
 		<string>换页按钮</string>
 	</dict>
+	<dict>
+		<key>method</key>
+		<string>showCustomAlertView</string>
+		<key>description</key>
+		<string>自定义AlertView</string>
+	</dict>
+	<dict>
+		<key>method</key>
+		<string>showCirclePercent</string>
+		<key>description</key>
+		<string>圆形百分比</string>
+	</dict>
 </array>
 </plist>

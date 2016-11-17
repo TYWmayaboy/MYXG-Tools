@@ -12,14 +12,18 @@
 #import "LBToAppStore.h"
 #import "SJDFilterTool.h"
 #import "ChangePageView.h"
+#import "CustomAlertView.h"
+#import "CirclePercent.h"
 
 @implementation UIViewController (Method)
 
+//app更新提示
 - (void)showUpdate
 {
     [[MYXG_UpdateApp sharedUpdater] showUpdateWithMessageAligment:UIBaselineAdjustmentAlignBaselines];
 }
 
+//对齐样式
 - (void)showAlertView
 {
     /*
@@ -35,6 +39,7 @@
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 
+//引导用户评价
 - (void)showGotoComment
 {
     LBToAppStore *toAppStore = [[LBToAppStore alloc]init];
@@ -43,6 +48,7 @@
 
 }
 
+//生成二维码
 -(void)showQRCode
 {
     UIViewController *viewController = [[UIViewController alloc] init];
@@ -57,9 +63,30 @@
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
+//换页按钮
 - (void)showChangePageView
 {
     NSLog(@"麻烦，自己看");
 }
 
+//自定义AlertView
+- (void)showCustomAlertView
+{
+   CustomAlertView *alert = [[CustomAlertView alloc] initWithTitle:@"测试" message:@"测试内容" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确认", nil];
+    [alert show];
+    
+}
+
+//圆形百分比
+- (void)showCirclePercent
+{
+    UIViewController *viewController = [[UIViewController alloc] init];
+    viewController.view.backgroundColor = [UIColor whiteColor];
+    CirclePercent *circle = [[CirclePercent alloc] initWithFrame:CGRectMake(0, 0, 100, 100) Percent:50 frColor:[UIColor redColor] bgColor:[UIColor yellowColor]];
+    circle.center = viewController.view.center;
+    [viewController.view addSubview:circle];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+
+}
 @end
