@@ -149,7 +149,7 @@ static const CGFloat mHeaderHeight = 40;
     CGSize titleSize = CGSizeZero;
     if (self.title && [self.title length] > 0)
     {
-        titleSize = [self.title sizeWithFont:[UIFont fontWithName:@"Helvetica-Bold" size:18.0f]];
+        titleSize =  [self.title sizeWithFont:[UIFont fontWithName:@"Helvetica-Bold" size:18.0f]];
     }
     if (titleSize.width > 0)
     {
@@ -164,7 +164,7 @@ static const CGFloat mHeaderHeight = 40;
         startX += 40;
         
         // - 标题
-        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(startX, (titleView.frame.size.height - 20) / 2, titleSize.width, 20)];
+        UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(startX-10, (titleView.frame.size.height - 20) / 2, titleSize.width, 20)];
         
         //- 标题太长的话需要处理
         if (titleLabel.frame.size.width > 250)

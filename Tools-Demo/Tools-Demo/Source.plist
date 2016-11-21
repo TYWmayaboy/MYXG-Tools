@@ -44,5 +44,11 @@
 		<key>description</key>
 		<string>圆形百分比</string>
 	</dict>
+	<dict>
+		<key>method</key>
+		<string>showTool</string>
+		<key>description</key>
+		<string>校验、时间格式转换</string>
+	</dict>
 </array>
 </plist>

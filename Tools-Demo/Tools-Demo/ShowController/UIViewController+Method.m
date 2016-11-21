@@ -89,4 +89,10 @@
     [self.navigationController pushViewController:viewController animated:YES];
 
 }
+
+//校验、时间格式转换
+- (void)showTool
+{
+    [[[CustomAlertView alloc] initWithTitle:@"温馨提示" message:@"暂无demo" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确认", nil] show];
+}
 @end

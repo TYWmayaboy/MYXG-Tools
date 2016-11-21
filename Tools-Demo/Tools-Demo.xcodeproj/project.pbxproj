@@ -29,6 +29,7 @@
 		182E32411DDD4C130032648F /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E323E1DDD4C130032648F /* CustomAlertView.m */; };
 		182E32421DDD4C130032648F /* GBverifyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E32401DDD4C130032648F /* GBverifyButton.m */; };
 		182E32451DDD53DA0032648F /* CirclePercent.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E32441DDD53DA0032648F /* CirclePercent.m */; };
+		1837F0BC1DE28EAF00FCF651 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837F0BB1DE28EAF00FCF651 /* Tool.m */; };
 		18EBC99B1DDAE4B7000D02B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EBC99A1DDAE4B7000D02B8 /* main.m */; };
 		18EBC99E1DDAE4B7000D02B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EBC99D1DDAE4B7000D02B8 /* AppDelegate.m */; };
 		18EBC9A41DDAE4B7000D02B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EBC9A21DDAE4B7000D02B8 /* Main.storyboard */; };
@@ -86,6 +87,8 @@
 		182E32401DDD4C130032648F /* GBverifyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBverifyButton.m; sourceTree = "<group>"; };
 		182E32431DDD53DA0032648F /* CirclePercent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CirclePercent.h; path = "../UIAlertController+MYXG/CirclePercent.h"; sourceTree = "<group>"; };
 		182E32441DDD53DA0032648F /* CirclePercent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CirclePercent.m; path = "../UIAlertController+MYXG/CirclePercent.m"; sourceTree = "<group>"; };
+		1837F0BA1DE28EAF00FCF651 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		1837F0BB1DE28EAF00FCF651 /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		18EBC9961DDAE4B7000D02B8 /* Tools-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tools-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EBC99A1DDAE4B7000D02B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18EBC99C1DDAE4B7000D02B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 		0429E69B1DDB03520077EA75 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1837F0B91DE28E8B00FCF651 /* Tool */,
 				182E32461DDD577B0032648F /* CirclePercent */,
 				182E323C1DDD4C0B0032648F /* CustomAlertView */,
 				1803CDF51DDC548A0063BC7F /* ChangePageBtn */,
@@ -232,6 +236,15 @@
 				182E32441DDD53DA0032648F /* CirclePercent.m */,
 			);
 			path = CirclePercent;
+			sourceTree = "<group>";
+		};
+		1837F0B91DE28E8B00FCF651 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				1837F0BA1DE28EAF00FCF651 /* Tool.h */,
+				1837F0BB1DE28EAF00FCF651 /* Tool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		18EBC98D1DDAE4B7000D02B8 = {
@@ -365,6 +378,7 @@
 				1803CE161DDC58B40063BC7F /* MASConstraint.m in Sources */,
 				182E32411DDD4C130032648F /* CustomAlertView.m in Sources */,
 				1803CE211DDC63FA0063BC7F /* LBToAppStore.m in Sources */,
+				1837F0BC1DE28EAF00FCF651 /* Tool.m in Sources */,
 				1803CE1C1DDC58B40063BC7F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1803CE181DDC58B40063BC7F /* MASLayoutConstraint.m in Sources */,
 				1803CE1B1DDC58B40063BC7F /* NSArray+MASAdditions.m in Sources */,
