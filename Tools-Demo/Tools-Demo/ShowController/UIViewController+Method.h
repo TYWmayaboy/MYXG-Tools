@@ -23,4 +23,6 @@
 - (void)showCustomAlertView;
 
 - (void)showCirclePercent;
+
+- (void)showEnum;
 @end

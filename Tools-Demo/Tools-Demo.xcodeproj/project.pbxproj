@@ -26,6 +26,7 @@
 		1803CE1D1DDC58B40063BC7F /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803CE101DDC58B40063BC7F /* View+MASAdditions.m */; };
 		1803CE1E1DDC58B40063BC7F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803CE131DDC58B40063BC7F /* ViewController+MASAdditions.m */; };
 		1803CE211DDC63FA0063BC7F /* LBToAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803CE201DDC63FA0063BC7F /* LBToAppStore.m */; };
+		18176FEB1DE423EB00039857 /* EnumClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 18176FEA1DE423EB00039857 /* EnumClass.m */; };
 		182E32411DDD4C130032648F /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E323E1DDD4C130032648F /* CustomAlertView.m */; };
 		182E32421DDD4C130032648F /* GBverifyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E32401DDD4C130032648F /* GBverifyButton.m */; };
 		182E32451DDD53DA0032648F /* CirclePercent.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E32441DDD53DA0032648F /* CirclePercent.m */; };
@@ -81,6 +82,8 @@
 		1803CE131DDC58B40063BC7F /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		1803CE1F1DDC63FA0063BC7F /* LBToAppStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBToAppStore.h; sourceTree = "<group>"; };
 		1803CE201DDC63FA0063BC7F /* LBToAppStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBToAppStore.m; sourceTree = "<group>"; };
+		18176FE91DE423EB00039857 /* EnumClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumClass.h; sourceTree = "<group>"; };
+		18176FEA1DE423EB00039857 /* EnumClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumClass.m; sourceTree = "<group>"; };
 		182E323D1DDD4C130032648F /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
 		182E323E1DDD4C130032648F /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
 		182E323F1DDD4C130032648F /* GBverifyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBverifyButton.h; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 		0429E69B1DDB03520077EA75 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				18176FE81DE423D400039857 /* Enum */,
 				1837F0B91DE28E8B00FCF651 /* Tool */,
 				182E32461DDD577B0032648F /* CirclePercent */,
 				182E323C1DDD4C0B0032648F /* CustomAlertView */,
@@ -216,6 +220,15 @@
 				1803CE131DDC58B40063BC7F /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		18176FE81DE423D400039857 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				18176FE91DE423EB00039857 /* EnumClass.h */,
+				18176FEA1DE423EB00039857 /* EnumClass.m */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		182E323C1DDD4C0B0032648F /* CustomAlertView */ = {
@@ -373,6 +386,7 @@
 				1803CE191DDC58B40063BC7F /* MASViewAttribute.m in Sources */,
 				1803CE151DDC58B40063BC7F /* MASCompositeConstraint.m in Sources */,
 				1803CDF81DDC54AF0063BC7F /* ChangePageView.m in Sources */,
+				18176FEB1DE423EB00039857 /* EnumClass.m in Sources */,
 				1803CE171DDC58B40063BC7F /* MASConstraintMaker.m in Sources */,
 				182E32421DDD4C130032648F /* GBverifyButton.m in Sources */,
 				1803CE161DDC58B40063BC7F /* MASConstraint.m in Sources */,

@@ -14,6 +14,7 @@
 #import "ChangePageView.h"
 #import "CustomAlertView.h"
 #import "CirclePercent.h"
+#import "EnumClass.h"
 
 @implementation UIViewController (Method)
 
@@ -94,5 +95,16 @@
 - (void)showTool
 {
     [[[CustomAlertView alloc] initWithTitle:@"温馨提示" message:@"暂无demo" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确认", nil] show];
+}
+
+//直接使用枚举值字符串
+- (void)showEnum
+{
+    //可以直接将键转化为字符串使用
+    NSString *str = [NSString stringWithFormat:@"%s", UMSocialPlatform[UMSocialPlatformType_Instagram]];
+    str = [str componentsSeparatedByString:@"_"][1];
+    str = [str componentsSeparatedByString:@"="].firstObject;
+    NSLog(@"%s", UMSocialPlatform[UMSocialPlatformType_Instagram]);
+    NSLog(@"%@", str);
 }
 @end

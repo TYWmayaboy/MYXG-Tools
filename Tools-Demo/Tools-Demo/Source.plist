@@ -50,5 +50,11 @@
 		<key>description</key>
 		<string>校验、时间格式转换</string>
 	</dict>
+	<dict>
+		<key>method</key>
+		<string>showEnum</string>
+		<key>description</key>
+		<string>直接使用枚举值字符串</string>
+	</dict>
 </array>
 </plist>
