@@ -18,5 +18,15 @@ Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
 
+#import "UIAlertController+MYXG.h"
+#import "MYXG-UpdateApp.h"
+#import "LBToAppStore.h"
+#import "SJDFilterTool.h"
+#import "ChangePageView.h"
+#import "CustomAlertView.h"
+#import "CirclePercent.h"
+#import "EnumClass.h"
+#import "UIImage+LXDCreateBarcode.h"
+#import "UIImage+RoundRectImage.h"
 
 #endif /* PrefixHeader_pch */

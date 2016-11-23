@@ -27,6 +27,8 @@
 		1803CE1E1DDC58B40063BC7F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803CE131DDC58B40063BC7F /* ViewController+MASAdditions.m */; };
 		1803CE211DDC63FA0063BC7F /* LBToAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1803CE201DDC63FA0063BC7F /* LBToAppStore.m */; };
 		18176FEB1DE423EB00039857 /* EnumClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 18176FEA1DE423EB00039857 /* EnumClass.m */; };
+		181EE1F61DE5321900F4A27D /* UIImage+LXDCreateBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 181EE1F31DE5321900F4A27D /* UIImage+LXDCreateBarcode.m */; };
+		181EE1F71DE5321900F4A27D /* UIImage+RoundRectImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 181EE1F51DE5321900F4A27D /* UIImage+RoundRectImage.m */; };
 		182E32411DDD4C130032648F /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E323E1DDD4C130032648F /* CustomAlertView.m */; };
 		182E32421DDD4C130032648F /* GBverifyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E32401DDD4C130032648F /* GBverifyButton.m */; };
 		182E32451DDD53DA0032648F /* CirclePercent.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E32441DDD53DA0032648F /* CirclePercent.m */; };
@@ -84,6 +86,10 @@
 		1803CE201DDC63FA0063BC7F /* LBToAppStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBToAppStore.m; sourceTree = "<group>"; };
 		18176FE91DE423EB00039857 /* EnumClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnumClass.h; sourceTree = "<group>"; };
 		18176FEA1DE423EB00039857 /* EnumClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumClass.m; sourceTree = "<group>"; };
+		181EE1F21DE5321900F4A27D /* UIImage+LXDCreateBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LXDCreateBarcode.h"; sourceTree = "<group>"; };
+		181EE1F31DE5321900F4A27D /* UIImage+LXDCreateBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LXDCreateBarcode.m"; sourceTree = "<group>"; };
+		181EE1F41DE5321900F4A27D /* UIImage+RoundRectImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundRectImage.h"; sourceTree = "<group>"; };
+		181EE1F51DE5321900F4A27D /* UIImage+RoundRectImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundRectImage.m"; sourceTree = "<group>"; };
 		182E323D1DDD4C130032648F /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
 		182E323E1DDD4C130032648F /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
 		182E323F1DDD4C130032648F /* GBverifyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBverifyButton.h; sourceTree = "<group>"; };
@@ -172,10 +178,8 @@
 		1803CDEE1DDC41670063BC7F /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
-				1803CDEF1DDC417A0063BC7F /* SJDFilterTool.h */,
-				1803CDF01DDC417A0063BC7F /* SJDFilterTool.m */,
-				1803CDF21DDC41BC0063BC7F /* UIImage+SJD.h */,
-				1803CDF31DDC41BC0063BC7F /* UIImage+SJD.m */,
+				181EE1F11DE531F000F4A27D /* LXD */,
+				181EE1F01DE531D000F4A27D /* SJD */,
 			);
 			path = QRCode;
 			sourceTree = "<group>";
@@ -229,6 +233,28 @@
 				18176FEA1DE423EB00039857 /* EnumClass.m */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		181EE1F01DE531D000F4A27D /* SJD */ = {
+			isa = PBXGroup;
+			children = (
+				1803CDEF1DDC417A0063BC7F /* SJDFilterTool.h */,
+				1803CDF01DDC417A0063BC7F /* SJDFilterTool.m */,
+				1803CDF21DDC41BC0063BC7F /* UIImage+SJD.h */,
+				1803CDF31DDC41BC0063BC7F /* UIImage+SJD.m */,
+			);
+			name = SJD;
+			sourceTree = "<group>";
+		};
+		181EE1F11DE531F000F4A27D /* LXD */ = {
+			isa = PBXGroup;
+			children = (
+				181EE1F21DE5321900F4A27D /* UIImage+LXDCreateBarcode.h */,
+				181EE1F31DE5321900F4A27D /* UIImage+LXDCreateBarcode.m */,
+				181EE1F41DE5321900F4A27D /* UIImage+RoundRectImage.h */,
+				181EE1F51DE5321900F4A27D /* UIImage+RoundRectImage.m */,
+			);
+			name = LXD;
 			sourceTree = "<group>";
 		};
 		182E323C1DDD4C0B0032648F /* CustomAlertView */ = {
@@ -389,6 +415,7 @@
 				18176FEB1DE423EB00039857 /* EnumClass.m in Sources */,
 				1803CE171DDC58B40063BC7F /* MASConstraintMaker.m in Sources */,
 				182E32421DDD4C130032648F /* GBverifyButton.m in Sources */,
+				181EE1F61DE5321900F4A27D /* UIImage+LXDCreateBarcode.m in Sources */,
 				1803CE161DDC58B40063BC7F /* MASConstraint.m in Sources */,
 				182E32411DDD4C130032648F /* CustomAlertView.m in Sources */,
 				1803CE211DDC63FA0063BC7F /* LBToAppStore.m in Sources */,
@@ -401,6 +428,7 @@
 				1803CDF11DDC417A0063BC7F /* SJDFilterTool.m in Sources */,
 				182E32451DDD53DA0032648F /* CirclePercent.m in Sources */,
 				1803CE1A1DDC58B40063BC7F /* MASViewConstraint.m in Sources */,
+				181EE1F71DE5321900F4A27D /* UIImage+RoundRectImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

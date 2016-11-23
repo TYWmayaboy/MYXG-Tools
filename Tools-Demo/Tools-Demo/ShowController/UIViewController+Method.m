@@ -7,14 +7,7 @@
 //
 
 #import "UIViewController+Method.h"
-#import "UIAlertController+MYXG.h"
-#import "MYXG-UpdateApp.h"
-#import "LBToAppStore.h"
-#import "SJDFilterTool.h"
-#import "ChangePageView.h"
-#import "CustomAlertView.h"
-#import "CirclePercent.h"
-#import "EnumClass.h"
+
 
 @implementation UIViewController (Method)
 
@@ -55,11 +48,16 @@
     UIViewController *viewController = [[UIViewController alloc] init];
     viewController.view.backgroundColor = [UIColor whiteColor];
     
-    UIImageView *imageView = [[UIImageView alloc] init];
-    [SJDFilterTool creatCIQRCodeImage:imageView str:@"https://github.com/TYWmayaboy/MYXG-Tools.git"];
-    imageView.bounds = CGRectMake(0, 0, 100, 100);
-    imageView.center = viewController.view.center;
-    [viewController.view addSubview:imageView];
+    UIImageView *imageViewSJD = [[UIImageView alloc] init];
+    [SJDFilterTool creatCIQRCodeImage:imageViewSJD str:@"https://github.com/TYWmayaboy/MYXG-Tools.git"];
+    imageViewSJD.frame = CGRectMake(0, 64, 100, 100);
+    [viewController.view addSubview:imageViewSJD];
+    
+    UIImageView *imageViewLXD = [[UIImageView alloc] init];
+    imageViewLXD.image = [UIImage imageOfQRFromURL:@"https://github.com/TYWmayaboy/MYXG-Tools.git" codeSize:300 red:117 green:248 blue:112 insertImage:[UIImage imageNamed:@"Default"] roundRadius:45];
+    [viewController.view addSubview:imageViewLXD];
+    imageViewLXD.bounds = CGRectMake(0, 0, 200, 200);
+    imageViewLXD.center = viewController.view.center;
     
     [self.navigationController pushViewController:viewController animated:YES];
 }
